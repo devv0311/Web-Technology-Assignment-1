@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <button id="darkModeToggle">&#x1F319;</button>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="email" placeholder="Email" required />
+            <div class="error-message" id="emailError"></div>
+            <input type="password" id="password" placeholder="Password" required />
+            <div class="error-message" id="passwordError"></div>
+            <button type="submit" id="submitButton">
+                <div class="spinner" id="loadingSpinner"></div>
+                <span id="buttonText">Login</span>
+            </button>
+        </form>
+
+        <div class="social-login">
+            <button class="social-button google" aria-label="Login with Google">
+                <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" alt="Google" class="social-icon">
+            </button>
+            <button class="social-button facebook" aria-label="Login with Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" class="social-icon">
+            </button>
+            <button class="social-button apple" aria-label="Login with Apple">
+                <img src="https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png" alt="Apple" class="social-icon">
+            </button>
+        </div>                       
+        
+        <div class="links">
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+            <span>|</span>
+            <a href="#" id="signUp">Sign Up</a>
+        </div>
+        
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
